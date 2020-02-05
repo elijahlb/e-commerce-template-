@@ -1,2 +1,77 @@
-$primaryBtn : rgb(37, 141, 115);
-$secondaryBtn : rgb(2, 39, 30);
+$floatText : rgb(243, 142, 10);
+$paragraphText : white;
+/*font-family: 'Bangers', cursive;
+font-family: 'Julius Sans One', sans-serif;*/
+
+@mixin parallax {
+    background: url(../assets/images/gym.jpg);
+    height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin leftToRight {
+    animation-duration: 3s;
+    animation-duration: 3s;
+    animation-name: slidein-left;
+    animation-name: slidein-left;
+  }
+  
+  @keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @mixin rightToLeft {
+    animation-duration: 3s;
+    animation-duration: 3s;
+    animation-name: slidein-right;
+    animation-name: slidein-right;
+  }
+  
+  @keyframes slidein-right {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+  
+  @keyframes slidein-right {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }
+    to {
+      margin-right: 0%;
+      width: 100%;
+  }
+}
+
+@mixin flexCenter  {
+    display:flex;
+    justify-content: center;
+}

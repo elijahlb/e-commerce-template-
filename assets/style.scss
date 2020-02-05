@@ -1,19 +1,10 @@
 @import "./variables";
 @import "./body";
-@mixin parallax  {
-    background: url(../assets/images/gym.jpg);
-    height: 700px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .parallax {
     @include parallax;  
 }
-
+    
 .parallax2 {
     @include parallax;
     background: url(../assets/images/grow.jpg);
@@ -22,7 +13,19 @@
        
 }
 
+li {
+    color:black;
+}
 h1 {
     @include flexCenter;
-    }
+    color:white;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#grow {
+     margin-top:100px;
+}
+
+
+
 

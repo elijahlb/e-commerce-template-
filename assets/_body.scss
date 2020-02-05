@@ -1,93 +1,51 @@
-@mixin flexCenter  {
-    display:flex;
-    justify-content: center;
-   
-
-}
-@mixin leftToRight {
-    -moz-animation-duration: 3s;
-    -webkit-animation-duration: 3s;
-    -moz-animation-name: slidein-left;
-    -webkit-animation-name: slidein-left;
-  }
-  
-  @-moz-keyframes slidein-left {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-  
-  @-webkit-keyframes slidein-left {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-@mixin rightToLeft {
-        -moz-animation-duration: 3s;
-        -webkit-animation-duration: 3s;
-        -moz-animation-name: slidein-right;
-        -webkit-animation-name: slidein-right;
-      }
-      
-      @-moz-keyframes slidein-right {
-        from {
-          margin-right: 100%;
-          width: 300%
-        }
-        to {
-          margin-right: 0%;
-          width: 100%;
-        }
-      }
-      
-      @-webkit-keyframes slidein-right {
-        from {
-          margin-right: 100%;
-          width: 300%
-        }
-        to {
-          margin-right: 0%;
-          width: 100%;
-      }
-}
 
 
-.left-slide{
-    @include leftToRight;
-    margin-top:200px;
+/*.opacity {
+    opacity:50%;
+}*/
+
+.hide {
+    opacity:0;
 }
 
 .right-slide {
     @include rightToLeft;
-    margin-top:150px;
+    margin-top:120px;
+      h1{
+        color:$floatText;
+        opacity:1.0;
+      }
 }
 
-
-
-
-.opacity {
-    opacity:50%;
+img.display-image {
+  max-height:300px;
+  max-width:auto;
+  margin-top:225px;
+  margin-right:30px;
+  border:1px solid black;
+  border-radius:10px;
 }
 
+.left-slide{
+    @include leftToRight;
+    margin-top:120px;
+    opacity:1.0;
+    color:$floatText;
+}
 
-body {
-
+#tagline {
     @include flexCenter;
+    @include leftToRight;
+    color:$paragraphText;
+    padding-top:200px;
+    padding-bottom:200px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight:bold;
+    font-size:150%;
+    border-top:solid 5px white;
+    border-bottom:solid 5px white;
+}
 
-    html {
-        height: 100%;
-  }
-    h1 {
-      color:white;
-    }
+.nav-link {
+  font-family: 'Julius Sans One', sans-serif;
 }

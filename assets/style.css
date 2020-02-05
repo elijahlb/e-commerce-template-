@@ -1,3 +1,41 @@
+@-webkit-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein-right {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+.left-slide {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: slidein-left;
+  -webkit-animation-name: slidein-left;
+  margin-top: 200px;
+}
+
+.right-slide {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: slidein-right;
+  -webkit-animation-name: slidein-right;
+  margin-top: 150px;
+}
+
 .opacity {
   opacity: 50%;
 }
@@ -9,9 +47,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body html {
@@ -23,9 +58,7 @@ body h1 {
 }
 
 .parallax {
-  /* The image used */
   background: url(../assets/images/gym.jpg);
-  /* Full height */
   height: 700px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -35,9 +68,7 @@ body h1 {
 }
 
 .parallax2 {
-  /* The image used */
   background: url(../assets/images/gym.jpg);
-  /* Full height */
   height: 700px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -56,9 +87,5 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #258d73;
 }
 /*# sourceMappingURL=style.css.map */

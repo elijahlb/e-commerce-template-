@@ -1,9 +1,80 @@
 @mixin flexCenter  {
     display:flex;
     justify-content: center;
-    align-items: center;
+   
 
 }
+@mixin leftToRight {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: slidein-left;
+    -webkit-animation-name: slidein-left;
+  }
+  
+  @-moz-keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  @-webkit-keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+@mixin rightToLeft {
+        -moz-animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        -moz-animation-name: slidein-right;
+        -webkit-animation-name: slidein-right;
+      }
+      
+      @-moz-keyframes slidein-right {
+        from {
+          margin-right: 100%;
+          width: 300%
+        }
+        to {
+          margin-right: 0%;
+          width: 100%;
+        }
+      }
+      
+      @-webkit-keyframes slidein-right {
+        from {
+          margin-right: 100%;
+          width: 300%
+        }
+        to {
+          margin-right: 0%;
+          width: 100%;
+      }
+}
+
+
+.left-slide{
+    @include leftToRight;
+    margin-top:200px;
+}
+
+.right-slide {
+    @include rightToLeft;
+    margin-top:150px;
+}
+
+
+
+
 .opacity {
     opacity:50%;
 }

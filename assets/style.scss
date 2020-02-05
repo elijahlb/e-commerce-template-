@@ -1,12 +1,8 @@
 @import "./variables";
 @import "./body";
 @mixin parallax  {
-    /* The image used */
     background: url(../assets/images/gym.jpg);
-  
-    /* Full height */
     height: 700px;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -28,6 +24,5 @@
 
 h1 {
     @include flexCenter;
-    color: $primaryBtn;
     }
 

@@ -65,6 +65,52 @@ font-family: 'Julius Sans One', sans-serif;*/
   }
 }
 
+/*font-family: 'Bangers', cursive;
+font-family: 'Julius Sans One', sans-serif;*/
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein-right {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein-right {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
 /*.opacity {
     opacity:50%;
 }*/
@@ -96,6 +142,10 @@ img.display-image {
   border-radius: 10px;
 }
 
+img.display-image:hover {
+  opacity: 0.7;
+}
+
 .left-slide {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
@@ -123,7 +173,7 @@ img.display-image {
   animation-name: slidein-left;
   color: white;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 355px;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   font-size: 150%;
@@ -133,6 +183,28 @@ img.display-image {
 
 .nav-link {
   font-family: 'Julius Sans One', sans-serif;
+}
+
+.footer {
+  background-color: #2c3641;
+  padding: 20px;
+  text-align: center;
+}
+
+.social {
+  color: white;
+  font-size: 200%;
+  margin-right: 20px;
+}
+
+.inline-link {
+  color: white;
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  color: #f38e0a;
+  text-decoration: none;
 }
 
 .parallax {
@@ -158,6 +230,19 @@ img.display-image {
   height: 600px;
 }
 
+.parallax3 {
+  background: url(../assets/images/gym.jpg);
+  height: 700px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(../assets/images/meal-prep.jpg);
+  background-position: 10%;
+  height: 600px;
+}
+
 li {
   color: black;
 }
@@ -170,7 +255,24 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+}
+
+p {
+  color: white;
+}
+
+i.fas.fa-shopping-cart.text-right {
+  color: black;
+}
+
+a#sign-in {
+  color: black;
+  margin-right: 20px;
+}
+
+a#sign-in:hover {
+  text-decoration: none;
 }
 
 #grow {

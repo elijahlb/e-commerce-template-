@@ -13,18 +13,43 @@
        
 }
 
+.parallax3 {
+    @include parallax;
+    background: url(../assets/images/meal-prep.jpg);
+    background-position: 10%; 
+    height: 600px;
+       
+}
+
 li {
     color:black;
 }
 h1 {
     @include flexCenter;
     color:white;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Permanent Marker', cursive;
 }
+
+p {
+   color:white; 
+}
+
+i.fas.fa-shopping-cart.text-right {
+    color:black;
+    }
+   
+a#sign-in {
+    color:black;
+        margin-right: 20px;
+        &:hover {
+            text-decoration:none;
+            }
+    }
 
 #grow {
      margin-top:100px;
 }
+
 
 
 

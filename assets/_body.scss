@@ -1,4 +1,4 @@
-
+@import "./variables";
 
 /*.opacity {
     opacity:50%;
@@ -24,6 +24,9 @@ img.display-image {
   margin-right:30px;
   border:1px solid black;
   border-radius:10px;
+    &:hover{
+      opacity:0.7;
+    }
 }
 
 .left-slide{
@@ -38,7 +41,7 @@ img.display-image {
     @include leftToRight;
     color:$paragraphText;
     padding-top:200px;
-    padding-bottom:200px;
+    padding-bottom:355px;
     font-family: 'Julius Sans One', sans-serif;
     font-weight:bold;
     font-size:150%;
@@ -49,3 +52,20 @@ img.display-image {
 .nav-link {
   font-family: 'Julius Sans One', sans-serif;
 }
+
+.footer {
+  background-color:$footer;
+  padding:20px;
+  text-align: center;
+}
+
+.social {
+  color:white;
+  font-size:200%;
+  margin-right:20px;
+}
+
+.inline-link {
+  @include inlineLink;
+}
+

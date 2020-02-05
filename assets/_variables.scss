@@ -1,8 +1,16 @@
 $floatText : rgb(243, 142, 10);
 $paragraphText : white;
+$footer: rgb(44, 54, 65);
 /*font-family: 'Bangers', cursive;
 font-family: 'Julius Sans One', sans-serif;*/
-
+@mixin inlineLink {
+    color:white;
+    text-decoration:none;
+    &:hover {
+      color:$floatText;
+      text-decoration:none;
+    }
+}
 @mixin parallax {
     background: url(../assets/images/gym.jpg);
     height: 700px;

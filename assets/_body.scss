@@ -1,0 +1,22 @@
+@mixin flexCenter  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.opacity {
+    opacity:50%;
+}
+
+
+body {
+
+    @include flexCenter;
+
+    html {
+        height: 100%;
+  }
+    h1 {
+      color:white;
+    }
+}

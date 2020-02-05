@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce-template-",
+  "version": "1.0.0",
+  "description": "E-Commerce Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elijahlb/e-commerce-template-.git"
+  },
+  "author": "Elijah Broaddus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elijahlb/e-commerce-template-/issues"
+  },
+  "homepage": "https://github.com/elijahlb/e-commerce-template-#readme",
+  "dependencies": {
+    "sass": "^1.25.0"
+  }
+}

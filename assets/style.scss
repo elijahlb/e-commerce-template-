@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./body";
+@mixin parallax  {
+    /* The image used */
+    background: url(../assets/images/gym.jpg);
+  
+    /* Full height */
+    height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    @include parallax;  
+}
+
+.parallax2 {
+    @include parallax;
+    background: url(../assets/images/grow.jpg);
+    background-position: 55%; 
+    height: 600px;
+       
+}
+
+h1 {
+    @include flexCenter;
+    color: $primaryBtn;
+    }
+

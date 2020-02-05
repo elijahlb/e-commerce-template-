@@ -1,0 +1,64 @@
+.opacity {
+  opacity: 50%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body html {
+  height: 100%;
+}
+
+body h1 {
+  color: white;
+}
+
+.parallax {
+  /* The image used */
+  background: url(../assets/images/gym.jpg);
+  /* Full height */
+  height: 700px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background: url(../assets/images/gym.jpg);
+  /* Full height */
+  height: 700px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(../assets/images/grow.jpg);
+  background-position: 55%;
+  height: 600px;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #258d73;
+}
+/*# sourceMappingURL=style.css.map */

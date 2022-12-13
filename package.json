@@ -19,7 +19,7 @@
   "homepage": "https://github.com/elijahlb/e-commerce-template-#readme",
   "dependencies": {
     "bcrypt": "^3.0.8",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "sass": "^1.25.0"
   },
   "devDependencies": {
